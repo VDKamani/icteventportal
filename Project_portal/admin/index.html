@@ -1,0 +1,303 @@
+<html>
+    <head><title>Forbiden</title></title></head>
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Special+Elite);
+* {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+html, body {
+  width:100%; 
+  min-height:100%; 
+  margin: 0;
+  background:#2E2E2C;
+  font-family: Special Elite;
+  line-height: 1.4em;
+  color: #607779;
+  overflow:hidden;
+}
+.grid[data-columns] {
+  min-width:100%;
+  column-count: 3;
+  column-gap: .5em;
+}
+
+.grid[data-columns] > section.block {
+  display: inline-block;
+  width: 100%;
+}
+
+.grid[data-columns] > section.block:nth-child(even) {
+  order: 2;
+}
+
+section.block {
+  margin: 0;
+  padding: 1em;
+  font-size: 1.1em;
+  color: #607779;
+  letter-spacing: 1px;
+  height:auto;
+   & span{
+      display:inline-block;
+      margin-left: 1rem;
+      &.b0{
+        width:20rem;
+        height:1.5rem;
+        background:#545657;
+      }
+      &.b1{
+        width:22rem;
+        height:1.5rem;
+        background:#93A1AB;
+      }
+      &.b2{
+        width:8rem;
+        height:1.5rem;
+        background:#B3C8DD;
+      }
+      &.b3{
+        width:12rem;
+        height:1.5rem;
+        background:#6A9C92;
+      }
+      &.b4{
+        width:10rem;
+        height:1.5rem;
+        background:#BC8696;
+      }
+      &.b5{
+        width:15rem;
+        height:1.5rem;
+        background:#7ED6BE;
+      }
+      &.b6{
+        width:16rem;
+        height:1.5rem;
+        background:#B3C8DD;
+      }
+    }
+  
+}
+
+@media all and (max-width: 1230px) {
+  .grid[data-columns] {
+    column-count: 2;
+  }
+}
+
+@media (max-width:780px){
+  .grid[data-columns] {
+    column-count: 1;
+    width:100%;
+    section.block{
+     & span{
+       width:95%;
+     }
+    }
+  }
+}
+@media (max-width:450px){
+  .grid[data-columns]{
+     section.block{
+       padding:0;
+    }
+  }
+}
+   
+.err{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  min-height:100%;
+  line-height:3rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+   & #str{
+    cursor:pointer;
+    align-self:center;
+    width:680px;
+    height:80px;
+    animation:anim 2.5s infinite ease;
+    color:#FFF;
+    text-shadow: -1px 2px 0px #000,
+                 -2px 3px 0px hsla(0,0%,0%,.8),
+                 3px 4px 0px hsla(0,0%,0%,.3),
+                 5px -5px 0px #D24858,
+                 6px 6px 0px hsla(0,0%,0%,.4);
+      font-size:2.5rem;
+      opacity:0;
+  }
+}
+@keyframes anim {
+  0% {
+    transform: none;
+    opacity: 0.75;
+  }
+  7% {
+    transform: translate(2px, 3px);
+    opacity: 0.85;
+     text-shadow: -5px 5px 0px #93A1AB,
+  }
+  10% {
+    transform: none;
+    opacity: 0.65;
+
+  }
+  27% {
+    transform: none;
+    opacity: 0.75;
+
+  }
+  30% {
+    transform: translate(5px, 2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.75;
+  }
+  52% {
+    transform: none;
+    opacity: 0.85;
+  }
+  55% {
+    transform: translate(5px, 1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.75;
+  }
+  72% {
+    transform: none;
+    opacity: 0.85;
+  }
+  75% {
+    transform: translate(2px, 6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.75;
+  }
+  100% {
+    transform: none;
+    opacity: 0.85;
+  }
+}
+    </style>
+
+    <body>
+        <div class='grid' data-columns>
+            <section class='block'>
+              <p><span class='b0'></span></p>
+              <p><span class='b1'></span></p>
+            </section>
+            <section class = 'block'>
+              <p><span class='b1'></span></p>
+              <p><span class='b4'></span></p>
+              <p><span class='b5'></span></p>
+            </section>
+            <section class = 'block'>
+              <p><span class='b1'></span></p>
+              <p><span class='b4'></span></p>
+              <p><span class='b5'></span></p>
+            </section>
+            <section class='block'>
+              <p><span class='b4'></span></span></p>
+              <p><span class='b1'></span></p>
+              <p><span class='b1'></span></p>
+            </section>
+            <section class='block'>
+              <p><span class='b1'></span></p>
+              <p><span class='b4 indent6'></span></p>
+            </section>
+            <section class='block'>
+              <p><span class='b0'></span></p>
+              <p><span class='b1'></span></p>
+            </section>
+            <section class = 'block'>
+              <p><span class='b1'></span></p>
+              <p><span class='b4'></span></p>
+              <p><span class='b5'></span></p>
+            </section>
+            <section class = 'block'>
+              <p><span class='b1'></span></p>
+              <p><span class='b4'></span></p>
+              <p><span class='b5'></span></p>
+            </section>
+            <section class='block'>
+              <p><span class='b4'></span></span></p>
+              <p><span class='b1'></span></p>
+              <p><span class='b1'></span></p>
+            </section>
+            <section class='block'>
+              <p><span class='b1'></span></p>
+              <p><span class='b4 indent6'></span></p>
+            </section>
+            <section class='block'>
+              <p><span class='b0'></span></p>
+              <p><span class='b1'></span></p>
+            </section>
+            <section class = 'block'>
+              <p><span class='b1'></span></p>
+              <p><span class='b4'></span></p>
+              <p><span class='b5'></span></p>
+            </section>
+            <section class = 'block'>
+              <p><span class='b1'></span></p>
+              <p><span class='b4'></span></p>
+              <p><span class='b5'></span></p>
+            </section>
+            <section class='block'>
+              <p><span class='b4'></span></span></p>
+              <p><span class='b1'></span></p>
+              <p><span class='b1'></span></p>
+            </section>
+            <section class='block'>
+              <p><span class='b1'></span></p>
+              <p><span class='b4'></span></p>
+            </section>
+            </div>
+            
+            <section class='err'>
+              <div id="str"></div>
+            </section> 
+
+            <script>
+                var $ = function(id) {
+                    return document.getElementById(id);
+                  };
+                  var el = $("str");
+                  var s = "--ERROR: 401_[UNAUTHORIZED]-- "; 
+                  var s1 = "-Can Not Be Accecess-";
+                  setInterval("shuffle(s  + s1 )",50);
+                  var t = 0;
+                  var o = 0.5;
+                  function shuffle(str){
+                      var caps = str.toUpperCase();
+                      var char = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                      var calc;
+                          for(n = 0; n < caps.length; n++){
+                              calc = Math.floor(Math.random()*char.length);
+                              if(n == 0)el.innerHTML = (t >= 0) ? caps.charAt(0) : char.charAt(calc);
+                              if(n >= 1)el.innerHTML += (t >= 0 + n * 2) ? caps.charAt(n) : char.charAt(calc);
+                          }
+                      o += 1 / (0 + caps.length * 2);
+                      el.style.opacity = o;
+                      t++;
+                  }
+                  //click text to reload
+                  function reload() {
+                    window.location.href = window.location.href;
+                  }
+                  $('str').onclick = reload;
+                  
+            </script>
+    </body>
+</html>

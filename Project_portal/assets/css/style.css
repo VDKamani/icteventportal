@@ -1,0 +1,386 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Playfair+Display&family=Righteous&family=Roboto+Condensed:wght@300&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.site-content{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.37),rgba(0, 0, 0, 0.37)), url("../img/marwadi.jpg");
+    height: 600px;
+    background-attachment: scroll;
+    background-size: cover;
+    
+
+}
+
+img.site_logo {
+    margin: 20px 30px;
+}
+
+.menu-bar{
+    background-image:linear-gradient(to right ,rgb(0, 0, 0),rgba(129, 127, 129, 0.836)) ;
+    text-align: center;
+    font-family: 'Roboto Condensed';
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;   
+}
+.menu-bar ul li{
+    
+    float: left;  
+    inline-size: auto;
+    margin-top: 10px;  
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);   
+    display: block;   
+    margin: 5px 30px; 
+}
+.menu-bar ul li:hover{
+    background: rgba(255, 255, 255, 0.37);
+    background-size: cover;
+}
+.sub-menu-1{
+   display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background-image:linear-gradient( rgb(0, 0, 0),rgba(129, 127, 129, 0.836)) ;    
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: grid;
+    margin: 10px;   
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 200px;
+    padding: 5px;
+    background: transparent;
+    text-align: left;   
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:hover
+{
+    color: burlywood;
+    background: rgba(0, 0, 0, 0.37);
+}
+
+/* section-1 */
+
+.section-1 .para-1{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    color: rgba(0, 0, 0, 0.59);
+}
+.section-1{
+    margin-top: 4%;
+}
+/* section-1 cart */
+.section-1 .card-text, .para-1{
+    color: rgba(0,0,0,0.59);
+}
+
+/* section-2 */
+
+.section-2{
+    margin-top: 8%;
+}
+.section-2 .row .col-md-7, .col-md-5{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.section-2 .para-2{
+    color: white;
+    font-family: 'Roboto Condensed';
+    margin-top: 4%;
+    font-size: 25px;
+}
+.parallax{
+    height: 30vw;
+    background-image: url('../img/sports-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    background-size: 100%;
+    
+}
+
+
+@media screen and (max-width: 768px){
+    .section-1 .card{
+        width: 14rem;
+    }
+    .section-2 .col-md-7 img{
+        width: 150px;
+    }
+
+
+}
+
+/*About us*/
+
+.map_in{
+    margin-top: 20px;
+    border: 1px solid ;
+}
+
+.map_div{
+    margin-top: 30px;
+    margin-right: 8%;
+    float: right;   
+}
+
+.contact_form{
+    float: left;
+    margin-left: 13%;
+    margin-top: 30px;   
+}
+
+.pad{
+    padding:  15px;
+    
+}
+
+.btn_contact{   
+    background: rgb(162, 166, 255);
+    color: black;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.cf1{
+    
+    padding: 3%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.925);   
+}
+
+.section-title{
+    margin-bottom: 17px;
+    text-align: left;
+}
+
+.details{
+    margin-top: 40%;
+    background-color: rgb(63, 62, 62);
+    color: whitesmoke;
+    padding-top: 10px;
+}
+
+.details_in{
+    float: left;
+    margin-left: 80px;
+}
+
+.f_title{
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.logos{
+    
+    font-size: xx-large;
+    padding-top: 2%;
+    float: right;
+    margin-right: 10%;
+}
+
+i{
+    padding-left: 25px;
+}
+
+.call {
+    color: coral;
+}
+
+.FB {
+    color: coral;
+}
+
+.insta {
+    color: coral;
+}
+
+.twit {
+    color: coral;
+}
+
+a:hover.twit {
+    color: aqua;
+}
+
+a:hover.insta {
+    color: rgb(255, 0, 157);
+}
+
+a:hover.FB {
+    color: rgb(0, 60, 255);
+}
+
+a:hover.call {
+    color: rgb(38, 255, 0);
+}
+
+.email{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* other css*/
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+.smalltext
+{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+  .bigtext
+{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.smalltext
+{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+  .bigtext
+{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color:rgb(94, 90, 90);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+h1.liketext { 
+        
+    display:inline;
+     vertical-align: top;
+     line-height: 300%;
+        }
+       
+
+input[type=submit]:hover {
+    background-color:red;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+
+   /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+        

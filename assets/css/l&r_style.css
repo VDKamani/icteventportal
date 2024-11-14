@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.37),rgba(0, 0, 0, 0.37)), url("../img/blank.jpg.png");
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    position: relative;
+    max-width: 850px;
+    width: 100%;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    perspective: 2700px;
+  
+}
+.container .cover{
+    position: absolute;
+    top:0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    z-index: 98;
+    transition: all 1s ease;
+    transform-origin: left;
+    transform-style: preserve-3d;
+
+}
+.container .cover::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 110%;
+    background: orangered;
+    opacity: 0.2;
+    z-index: 100;
+    
+}
+.container .cover::after{
+    height: 100%;
+    width: 100%;
+    position: absolute;  
+    background: orangered;
+    opacity: 0.2;
+    z-index: 100;
+    transform: rotateY(180deg); 
+}
+.container #flip:checked ~ .cover{
+    transform: rotateY(-180deg);
+}
+.container .cover img{
+    position: absolute;
+    height: 100%;
+    width: 110%;
+    backface-visibility: hidden;
+    object-fit: cover;
+    z-index: 12; 
+}
+.container .cover .back .backImg{
+    transform: rotateY(180deg);  
+    
+}
+.container form{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+.container .form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-content .login-form,
+.form-content .signup-form{
+    width: calc(100% / 2 - 25px);
+}
+form .form-content .title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+form .form-content .title::before{
+    content: '';
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    background: orangered;
+}
+form .signup-form .title::before{
+    width: 20px ;
+
+}
+form .form-content .input-boxes{
+    margin-top: 30px;
+}
+form .form-content .input-box{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.form-content .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.form-content .input-box input:focus,
+.form-content .input-box input:valid{
+    border-color: orangered;
+}
+.form-content .input-box i{
+    position: absolute;
+    color: orangered;
+    font-size: 17px;
+}
+
+form .form-content .text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+form .form-content .text a{
+    text-decoration: none;
+    color: orangered;
+}
+form .form-content .text a:hover{
+    text-decoration: underline;
+}
+form .form-content .button{
+    color: #fff;
+    margin-top: 40px;
+}
+form .form-content .button input{
+    color: #fff;
+    background: orangered;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+form .form-content .button input:hover{
+    background: rgb(255, 143, 103);
+}
+form .form-content label{
+    color: orangered;
+    cursor: pointer;
+}
+form .form-content label:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+form .form-content .login-text,
+form .form-content .sign-up-text{
+    text-align: center;
+    margin-top: 25px;
+}
+.container #flip{
+    display: none;
+}
+@media (max-width: 730px){
+    .container .cover{
+        display: none;
+    }
+    .form-content .login-form,
+    .form-content .signup-form{
+        width: 100%;
+    }
+    .form-content .signup-form{
+        display: none;
+    }
+    .container #flip:checked ~ form .signup-form{
+        display: block;
+    }
+    .container #flip:checked ~ form .login-form{
+        display: none;
+    }
+}
+
+

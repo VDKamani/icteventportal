@@ -1,0 +1,63 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.back{
+
+    background-image: linear-gradient(rgba(255, 230, 4, 0.2),rgba(255, 57 , 11, 0.2)),url("../img/marwadi_background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.login_div{
+    width:100%;
+    border: solid;
+    border-color: #bbb;
+    text-align:center;
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    }
+     
+.bigtext {
+      width: 60%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+
+  h1.liketext { 
+        
+    display:inline;
+     vertical-align: top;
+     line-height: 300%;
+        }
+
+
+
+footer {
+    background-color:#6880a8;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+   
+    margin-top: 11.5%;
+}
+
+.btn{
+    height: 30px;
+    width: 100px;
+    background-color: sandybrown;
+    color: white;
+}

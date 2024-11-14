@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="../css/upload.css">
+    <title></title>
+</head>
+<body>
+    <form action="./gm_upload.php" method="post" enctype="multipart/form-data">
+        <div class="frame2">
+           <center> <h2>Upload the image of Games schedule</h2> </center>
+            <div class="center">
+                <div class="title">
+                    <h1>Only Upload JPG , JPEG , GIF, PNG</h1>
+                </div>
+        
+                <div class="dropzone">
+                    <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+                    <input type="file"  name="image" id="file-upload" class="upload-input"  required accept="image/*" />
+                </div>
+        
+                <button type="submit" class="btn" name="submit">Upload file</button>
+                <div id="file-upload-filename"></div>
+        
+            </div>
+        </div>
+    </form>
+    <script src="../js/upload.js"></script>
+</body>
+</html>
